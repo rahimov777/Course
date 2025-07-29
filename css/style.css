@@ -42,7 +42,7 @@ hr {
 
 .divForFlexNameAndImg {
     display: flex;
-    gap: 120px;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -245,7 +245,7 @@ dialog::backdrop {
 .divForInpAndAddButton {
     display: flex;
     align-items: center;
-    gap: 950px;
+    justify-content: space-between;
 }
 
 .btnAdd {
@@ -255,6 +255,7 @@ dialog::backdrop {
     border: none;
     border-radius: 10px;
     font-weight: bold;
+    margin: 40px;
 }
 
 .dialogForAdd {
