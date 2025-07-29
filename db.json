@@ -27,11 +27,11 @@
       "gender": "Male",
       "course": "HTML/CSS",
       "courseDate": "2025-07-07",
-      "status": false,
+      "status": true,
       "id": "3"
     },
     {
-      "name": "Idris Irgashev",
+      "name": "Nasim Qurbonov",
       "phone": "110727111",
       "age": "16",
       "gender": "Male",
@@ -61,14 +61,14 @@
       "id": "6"
     },
     {
-      "id": "b19a",
-      "name": "Qrbongl",
-      "phone": "987619743",
-      "age": "18",
+      "id": "de8f",
+      "name": "Ahmad Avwahidov",
+      "phone": "98765433",
+      "age": "14",
       "gender": "female",
-      "course": "Javascript",
-      "courseDate": "2025-12-23",
-      "status": true
+      "course": "C#",
+      "courseDate": "2025-07-24",
+      "status": false
     }
   ]
 }
