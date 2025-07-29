@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "name": "Yosin Ghairatzoda",
+      "phone": "006060707",
+      "age": "16",
+      "gender": "Male",
+      "course": "Python",
+      "courseDate": "2025-07-04",
+      "status": true,
+      "id": "1"
+    },
+    {
+      "name": "Abdurahmon Inoyatov",
+      "phone": "985639944",
+      "age": "14",
+      "gender": "Male",
+      "course": "C++",
+      "courseDate": "2025-07-07",
+      "status": true,
+      "id": "2"
+    },
+    {
+      "name": "Abdullo Inoyatov",
+      "phone": "918259944",
+      "age": "14",
+      "gender": "Male",
+      "course": "HTML/CSS",
+      "courseDate": "2025-07-07",
+      "status": false,
+      "id": "3"
+    },
+    {
+      "name": "Idris Irgashev",
+      "phone": "110727111",
+      "age": "16",
+      "gender": "Male",
+      "course": "C++",
+      "courseDate": "2025-07-05",
+      "status": true,
+      "id": "4"
+    },
+    {
+      "name": "Muhammad Fozilov",
+      "phone": "987619743",
+      "age": "16",
+      "gender": "Male",
+      "course": "Git & Github",
+      "courseDate": "2025-07-07",
+      "status": false,
+      "id": "5"
+    },
+    {
+      "name": "Abdullo Odinaev",
+      "phone": "909122010",
+      "age": "13",
+      "gender": "Male",
+      "course": "Python Kids",
+      "courseDate": "2025-06-12",
+      "status": true,
+      "id": "6"
+    },
+    {
+      "id": "b19a",
+      "name": "Qrbongl",
+      "phone": "987619743",
+      "age": "18",
+      "gender": "female",
+      "course": "Javascript",
+      "courseDate": "2025-12-23",
+      "status": true
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(11, 15, 25);
+}
+
+img {
+    width: 55px;
+    border-radius: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.div {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(17, 24, 39);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+hr {
+    height: 15px;
+}
+
+
+.divForNameDown {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgb(48, 150, 245);
+    margin-top: 10px;
+}
+
+.divForFlexNameAndImg {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+.divForCourse {
+    background-color: rgb(11, 15, 25);
+    width: 97%;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7px;
+}
+
+.divForIkonCopy {
+    width: 50px;
+    height: 45px;
+    background-color: rgb(219, 209, 209);
+    font-size: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(0, 21, 255);
+}
+
+.divForCourseAndIkon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.btnEdit {
+    background: none;
+    border: none;
+    color: rgb(0, 157, 255);
+    font-size: 20px;
+}
+
+.btnDel {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnYes {
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btnNo {
+    width: 100px;
+    height: 35px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    padding: 50px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
+
+.dialogForEdit {
+    border: none;
+    border-radius: 12px;
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 90%;
+    background: #fdfdfd;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+}
+
+
+.dialogForEdit h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formEdit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formEdit input,
+.formEdit select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.formEdit input:focus,
+.formEdit select:focus {
+    outline: none;
+    border-color: #7b3fe4;
+    box-shadow: 0 0 5px #7b3fe450;
+}
+
+.formEdit button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formEdit button[type="submit"]:hover {
+    background-color: #2d7430;
+}
+
+.CancelbtnEdit {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.CancelbtnEdit:hover {
+    background-color: rgb(53, 50, 50);
+}
+
+.inForSearch,
+.selectCourse {
+    background-color: #1e1e2f;
+    color: #d1d5db;
+    border: 1px solid #2c2c3a;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    margin: 20px
+}
+
+.inForSearch::placeholder {
+    color: #9ca3af;
+}
+
+.inForSearch:focus,
+.selectCourse:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px #4f46e580;
+}
+
+.inForSearch {
+    background-image: url('https://www.citypng.com/public/uploads/preview/white-search-icon-button-png-img-735811696240431a0p3ex0i2v.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 35px;
+}
+
+.selectCourse {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.divForInpAndAddButton {
+    display: flex;
+    align-items: center;
+    gap: 950px;
+}
+
+.btnAdd {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0, 179, 255);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dialogForAdd {
+    border: none;
+    border-radius: 12px;
+    padding: 25px 30px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.formAdd h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.formAdd input,
+.formAdd select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.formAdd select {
+    background-color: #fff;
+}
+
+.formAdd button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.formAdd button[type="submit"] {
+    background-color: #22c55e;
+    color: white;
+}
+
+.formAdd button[type="submit"]:hover {
+    background-color: #0e652e;
+}
+
+.formAdd .CancelbtnAdd {
+    background-color: gray;
+    color: white;
+}
+
+.formAdd .CancelbtnAdd:hover {
+    background-color: rgb(63, 60, 60);
+}
+
+.formAdd div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dialogForInfo {
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #0f172a;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.dialogForInfo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.infoContent p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.infoContent span {
+    color: #facc15;
+}
+
+.btnCloseInfo {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnCloseInfo:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .divForInpAndAddButton {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .div {
+        width: 85%;
+        height: 240px;
+        margin: 10px 0;
+    }
+
+    .divForFlexNameAndImg {
+        gap: 65px;
+    }
+
+    .divForCourse {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .divForIkonCopy {
+        width: 100%;
+        height: auto;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .formAdd,
+    .formEdit {
+        width: 100%;
+    }
+
+    .dialogForAdd,
+    .dialogForEdit {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inForSearch,
+    .selectCourse {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    dialog {
+        padding: 20px;
+    }
+}

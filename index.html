@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="divForInpAndAddButton">
+      <div class="">
+        <input
+          type="search"
+          name=""
+          class="inForSearch"
+          placeholder="Search student"
+        />
+
+        <select name="" id="" class="selectCourse">
+          <option value="All">All course</option>
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+          <option value="HTML/CSS">HTML/CSS</option>
+          <option value="Python Kids">Python Kids</option>
+          <option value="Git & Github">Git & Github</option>
+          <option value="Javascript">Javascript</option>
+        </select>
+      </div>
+      <div class="">
+        <button class="btnAdd">+ ADD NEW</button>
+      </div>
+    </div>
+
+    <dialog class="dialogForAdd">
+      <h2>Add User</h2>
+      <form method="dialog" class="formAdd">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="phone" placeholder="Phone" required />
+        <input type="number" name="age" placeholder="Age" required />
+
+        <select name="gender" required>
+          <option disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <input type="text" name="course" placeholder="Course" required />
+        <input
+          type="date"
+          name="courseDate"
+          placeholder="Course Date"
+          required
+        />
+
+        <select name="status" required>
+          <option value="true">Active</option>
+          <option value="false">Inactive</option>
+        </select>
+
+        <div style="margin-top: 10px; display: flex; gap: 10px">
+          <button type="submit">Save</button>
+          <button type="button" class="CancelbtnAdd">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="dialogForDel">
+      <h2>Are you sure to delete this card ?</h2>
+      <button class="btnYes">Yes</button>
+      <button class="btnNo">No</button>
+    </dialog>
+
+    <dialog class="dialogForEdit">
+      <h2>Edit user</h2>
+      <form class="formEdit">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="phone" placeholder="Phone" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input type="text" name="course" placeholder="course" required />
+        <input
+          type="text"
+          name="courseDate"
+          placeholder="courseDate"
+          required
+        />
+        <select name="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <select name="status" required>
+          <option value="true">Active</option>
+          <option value="false">Inactive</option>
+        </select>
+        <button type="submit">Save</button>
+        <button type="button" class="CancelbtnEdit">Cancel</button>
+      </form>
+    </dialog>
+
+    <dialog class="dialogForInfo">
+      <h2>Course Information</h2>
+      <div class="infoContent">
+        <p><strong>Course:</strong> <span class="infoCourse"></span></p>
+        <p><strong>Date:</strong> <span class="infoDate"></span></p>
+        <p><strong>Teacher:</strong> <span class="infoTeacher"></span></p>
+        <p><strong>Time:</strong> <span class="infoTime"></span></p>
+      </div>
+      <button class="btnCloseInfo">Close</button>
+    </dialog>
+
+    <div class="box"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
