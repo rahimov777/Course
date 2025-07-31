@@ -1,6 +1,6 @@
 import { getData } from "./dom.js";
 
-let API = 'http://localhost:3000/data'
+let API = 'https://688b06d32a52cabb9f4fb7e2.mockapi.io/users'
 
 async function get() {
     let { data } = await axios.get(API)
